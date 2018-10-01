@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Hours without YANDHI</title>
+
         <script>
             const SeptemberTwentyNinthAtMidnightEST = new Date(Date.UTC(2018, 8, 30, 3, 59, 59));
             var hoursWithoutYandhi = Math.floor(
@@ -8,9 +10,9 @@
                     (new Date() - SeptemberTwentyNinthAtMidnightEST) / 3600000
                 )
             );
-            document.title = hoursWithoutYandhi;
-            console.log(hoursWithoutYandhi);
+            document.title = hoursWithoutYandhi + " hours without YANDHI";
         </script>
+
         <!-- Favicons -->
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-57x57.png" />
@@ -139,6 +141,10 @@
                 <p class="them">
                     It's been <script>document.write(hoursWithoutYandhi)</script> hours.
                 </p>
+
+                <!-- <p class="me">
+                    Your waviness has been rewarded.
+                </p> -->
             </div>
             <img id="billboard-base" src="./images/billboard_base.png"/>
         </div>
