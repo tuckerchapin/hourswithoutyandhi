@@ -144,6 +144,18 @@
                 left: 0;
                 margin: 30px;
             }
+
+            @keyframes fadeinfirst {
+                0%     { opacity: 0; }
+                50%    { opacity: 0; }
+                100%   { opacity: 1; }
+            }
+            @keyframes fadeinsecond {
+                0%     { opacity: 0; }
+                66%    { opacity: 0; }
+                100%   { opacity: 1; }
+            }
+
         </style>
     </head>
     <body>
@@ -153,11 +165,11 @@
                     YANDHI 9 29 18
                 </p>
 
-                <p class="them">
+                <p class="them" style="animation: fadeinfirst 2s;">
                     Where is Yandhi?
                 </p>
 
-                <p class="them">
+                <p class="them" style="animation: fadeinsecond 3s;">
                     It's been <script>document.write(hoursWithoutYandhi)</script> hours.
                 </p>
 
