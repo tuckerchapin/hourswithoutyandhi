@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const SeptemberTwentyNinthAtMidnightEST = new Date(Date.UTC(2018, 8, 30, 3, 59, 59));
+            var hoursWithoutYandhi = Math.floor(
+                Math.abs(
+                    (new Date() - SeptemberTwentyNinthAtMidnightEST) / 3600000
+                )
+            );
+            document.title = hoursWithoutYandhi;
+            console.log(hoursWithoutYandhi);
+        </script>
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://hourswithoutyandhi.com/favicons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="http://hourswithoutyandhi.com/favicons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="http://hourswithoutyandhi.com/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="http://hourswithoutyandhi.com/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="http://hourswithoutyandhi.com/favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="http://hourswithoutyandhi.com/favicons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="WHERE IS YANDHI?"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="http://hourswithoutyandhi.com/favicons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="http://hourswithoutyandhi.com/favicons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="http://hourswithoutyandhi.com/favicons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="http://hourswithoutyandhi.com/favicons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="http://hourswithoutyandhi.com/favicons/mstile-310x310.png" />
+        <!-- End favicons -->
+
+        <style>
+            html, body, div, span, a, p, ul, li, h1, code, nav, img {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                box-sizing: inherit;
+                font: inherit;
+                text-decoration: inherit;
+                text-align: inherit;
+                color: inherit;
+                background: transparent;
+            }
+
+            html, body { height: 100%; }
+            html { overflow: hidden; }
+            body {
+                width: 100%;
+                overflow: auto;
+                background-image: url('./images/sky.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+            }
+
+            #container {
+                position: absolute;
+                bottom: 0;
+            }
+
+            #billboard-base {
+                width: 800px;
+            }
+
+            #billboard-chat {
+                background-color: #FFF;
+                width: 793px;
+                height: 350px;
+                border-radius: 2px;
+                margin-left: 7px;
+            }
+
+            p {
+                margin: 0 0 0.5em;
+                border-radius: 1em;
+                padding: 0.5em 1em;
+                background: #e5e5ea;
+                clear: both;
+                position: relative;
+                font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+                p:first-child {
+                    margin-top: 100px;
+                }
+                p:nth-child(2) {
+                    margin: 0 0 0.25em;
+                }
+                p.them {
+                    float: left;
+                    margin-left: 150px;
+                }
+                    p.them:last-child::after {
+                        content: "";
+                        position: absolute;
+                        left: -0.5em;
+                        bottom: 0;
+                        width: 0.5em;
+                        height: 1em;
+                        border-right: 0.5em solid #e5e5ea;
+                        border-bottom-right-radius: 1em 0.5em;
+                    }
+                p.me {
+                    float: right;
+                    margin-right: 150px;
+                    background-color: #1289fe;
+                    color: white;
+                }
+                    p.me::after {
+                        content: "";
+                        position: absolute;
+                        right: -0.5em;
+                        bottom: 0;
+                        width: 0.5em;
+                        height: 1em;
+                        border-left: 0.5em solid #1289fe;
+                        border-bottom-left-radius: 1em 0.5em;
+                    }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="billboard-chat">
+                <p class="me">
+                    YANDHI 9 29 18
+                </p>
+
+                <p class="them">
+                    Where is Yandhi?
+                </p>
+
+                <p class="them">
+                    It's been <script>document.write(hoursWithoutYandhi)</script> hours.
+                </p>
+            </div>
+            <img id="billboard-base" src="./images/billboard_base.png"/>
+        </div>
+    </body>
+</html>
